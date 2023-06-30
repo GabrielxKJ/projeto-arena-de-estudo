@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Passion+One:wght@400;700&display=swap');
+
+/* *{
+    margin: 0px;
+    padding: 0px;
+} */
+
+body {
+    box-sizing: border-box;
+  	width: 100%;
+	background-color: rgb(178, 212, 216);
+	font-family: 'Inter';
+}
+
+/* .code-block {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: "Courier New", monospace;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.code-block code {
+    color: #333;
+  }
+   */

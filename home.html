@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arena</title>
+    <link rel="stylesheet" href="./styles/home_page_style.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Arena de estudos</h1>
+        <h2> Escolha o estudo do dia: </h2>
+    </header>
+    <section id="content">
+        <div id="css-card" class="card" onclick="redirectToPage('pages/css_page.html')">
+            <!-- <a href="./pages/css_page.html">CSS</a> -->
+        </div>
+        <div id="js-card" class="javascript-card card" onclick="redirectToPage('pages/javascript_page.html')">
+            <!-- <a href="./pages/javascript_page.html">JavaScript</a> -->
+        </div>
+        <div id="math-card" class="card" onclick="redirectToPage('pages/math_page.html')">
+            <!-- <a href="./pages/math_page.html">Matemática</a> -->
+        </div>
+    </section>
+    <script>
+        function redirectToPage(url) {
+            window.location.href = url
+        }
+    </script>
+</body>
+</html>

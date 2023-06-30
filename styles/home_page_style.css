@@ -1,0 +1,66 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Passion+One:wght@400;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Passion+One:wght@400;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	box-sizing: border-box;
+  	width: 100%;
+	background-color: rgb(231, 156, 70);
+	font-family: 'Francois One', sans-serif;
+}
+
+#title {
+	text-align: center;
+	font-size: 80px;
+	margin-top: 50px;
+}
+
+h2 {
+	text-align: center;
+}
+
+#content {
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	gap: 50px;
+	height: 100vh;
+}
+
+.card {
+	height: 500px;
+	width: 385px;
+	background-color: rgb(119, 119, 119);
+	border-radius: 20px;
+	box-shadow: 0 2px 3px rgba(0,0,0,0.5); 
+}
+
+.card:hover {
+	transform: translateY(-10px);
+	cursor: pointer;
+	box-shadow: 0 10px 12px rgba(0,0,0,0.5);
+	transition: 0.5s;
+}
+
+#css-card {
+	background-color: rgb(63, 154, 214);
+	background-image: url(../images/cards-images/pngwing.com.png);
+	background-size: cover;
+	background-position: center bottom;
+}
+
+#js-card {
+	background-image: url(../images/cards-images/javascript-logo-4.png);
+	background-size: cover;
+	background-position: right center;
+}
+
+#math-card {
+	background-image: url(../images/cards-images/math_bkg.jpg);
+	background-size: cover;
+	background-position: center;
+}
