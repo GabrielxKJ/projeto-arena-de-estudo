@@ -29,7 +29,7 @@
 					<p>
 						O CSS permite separar a apresentação dos documentos, ou seja,
 						você pode definir um estilo CSS separado e aplicá-lo à varios documentos
-						HTML. 
+						HTML.
 					</p>
 				</li>
 				<li>
@@ -48,7 +48,7 @@
 					<h3>Seletor</h3>
 				</li>
 				<p>
-					Os Seletores indicam em quais elementos HTML, uma regra CSS 
+					Os Seletores indicam em quais elementos HTML, uma regra CSS
 					deve ser aplicada. Ele é utilizado para apontar a elementos específicos
 					em uma página HTML com base em seu tipo, classe, identificador, atributos,
 					hierarquia e outros critérios.
@@ -58,14 +58,17 @@
 					<h3>Propriedade</h3>
 				</li>
 				<p>
-					As propriedades em um seletor CSS são atributos que definem o estilo e o comportamento dos elementos HTML selecionados pelo seletor. Cada propriedade tem um valor associado que determina como a propriedade será aplicada aos elementos.
+					As propriedades em um seletor CSS são atributos que definem o estilo e o comportamento dos elementos HTML
+					selecionados pelo seletor. Cada propriedade tem um valor associado que determina como a propriedade será
+					aplicada aos elementos.
 				</p>
 
 				<li>
 					<h3>Valor</h3>
 				</li>
 				<p>
-					O valor de uma propriedade CSS é a configuração específica que você atribui a essa propriedade para definir como ela será aplicada a um elemento HTML selecionado pelo seletor.
+					O valor de uma propriedade CSS é a configuração específica que você atribui a essa propriedade para definir
+					como ela será aplicada a um elemento HTML selecionado pelo seletor.
 				</p>
 			</ul>
 			<br>
@@ -75,115 +78,136 @@
 			<br>
 			<em>Propriedades mais utilizas:</em>
 			<ul>
-				<li>color: Define a cor do texto dentro do elemento.</li>
-				<li>font-size: Especifica o tamanho da fonte do texto.</li>
-				<li>background-color: Define a cor de fundo do elemento.</li>
-				<li>border: Define as bordas do elemento, incluindo a largura, estilo e cor.</li>
-				<li>width e height: Especificam a largura e a altura do elemento.</li>
-				<li>padding: Define o preenchimento interno do elemento, criando um espaço entre o conteúdo e a borda.</li>
-				<li>margin: Define a margem externa do elemento, criando um espaço entre o elemento e os elementos vizinhos.</li>
-				<li>text-align: Especifica o alinhamento horizontal do texto dentro do elemento.</li>
-				<li>display: Controla como o elemento é exibido na página (block, inline, etc.).</li>
-				<li>position: Define o tipo de posicionamento do elemento (static, relative, absolute, fixed).</li>
+				<li>
+					<p>color: Define a cor do texto dentro do elemento.</p>
+				</li>
+				<li>
+					<p>font-size: Especifica o tamanho da fonte do texto.</p>
+				</li>
+				<li>
+					<p>background-color: Define a cor de fundo do elemento.</p>
+				</li>
+				<li>
+					<p>border: Define as bordas do elemento, incluindo a largura, estilo e cor.</p>
+				</li>
+				<li>
+					<p>width e height: Especificam a largura e a altura do elemento.</p>
+				</li>
+				<li>
+					<p>padding: Define o preenchimento interno do elemento, criando um espaço entre o conteúdo e a borda.</p>
+				</li>
+				<li>
+					<p>margin: Define a margem externa do elemento, criando um espaço entre o elemento e os elementos vizinhos.
+					</p>
+				</li>
+				<li>
+					<p>text-align: Especifica o alinhamento horizontal do texto dentro do elemento.</p>
+				</li>
+				<li>
+					<p>text-align: Especifica o alinhamento horizontal do texto dentro do elemento.</p>
+				</li>
+				<li>
+					<p>position: Define o tipo de posicionamento do elemento (static, relative, absolute, fixed).</p>
+				</li>
 			</ul>
 		</article>
 		<article>
 			<h3>Tipos de seletores</h3>
 			<p>
 				Para selecionar a Tag a ser estilizada existem "identificadores" são eles:
-				<ul>
-					<li>
-						<p>
-							<b>Seletor de tipo:</b>
-							Seleciona elementos com base no tipo da tag.
-							Por exemplo: 'h1', 'p', 'div'.
-						</p>
-					</li>
-					<li>
-						<p>
-							<b>Seletor de classe:</b>
-							Seleciona elementos com base no valor do atributo 'class' que é
-							indicado pelo prefixo ".". Por exemplo: '.destaque','.btn'
-							'.container'.
-						</p>
-					</li>
-					<li>
-						<p>
-							<b>Seletor de ID:</b>
-							Seleciona um único elemento com base no atributo 'id' que é 
-							indicado pelo prefixo "#". Por exemplo: "#logo", "#header", "#menu"
-						</p>
-					</li>
-					<li>
-						<p>
-							<b>Seletor de descendentes:</b>
-							Seleciona elementos descendentes de outro elemento.
-							É indicado por um espaço entre os Seletores. Por exemplo:
-							'div p', '#container p', '#menu .item'. 
-						</p>
-					</li>
-					<li>
-						<p>
-							<b>Seletor de filho direto:</b>
-							Seleciona elementos que são filhos direto de outro elemento.
-							É indica pelo sinal ">". Por exemplo: 'div > p', 'ul > li'.
-						</p>
-					</li>
-					<li>
-						<p>
-							<b>Seletor de adjacente:</b>
-							Seleciona o elemento adjacente imediatamente após o outro elemento.
-							É indicado pelo sinal "+". Por exemplo: 'h2 + p', 'label + input'.
-						</p>
-					</li>
-					<li>
-						<p>
-							<b>Seletor de irmão geral:</b>
-							Seleciona todos os elementos irmãos que seguem outro elemento.
-							É indicado pelo sinal "~". Por exemplo: 'h2 ~ p', ul ~ p'.
-						</p>
-					</li>
-					<li>
-						<p>
-							<b>Seletor de atributo:</b>
-							Seleciona elementos com base em um atributo específico e seu valor.
-							Por exemplo: '[type="text"]', '[href="https://"]'( seleciona links com URLs
-							que começam com "https://").
-						</p>
-					</li>
-					<li>
-						<p>
-							<b>Seletor de pseudo-classe:</b>
-							Seleciona elementos com base em um estado específico ou interação do usuário.
-							É indicado por ":". Por exemplo: ':hover', ':active', ':focus'.
-						</p>
-					</li>
-					<li>
-						<p>
-							<b>Seletor de pseudo-elemento:</b>
-							Seleciona partes específicas de um elemento. É indicado por "::".
-							Por exemplo: '::before', '::after'.
-						</p>
-					</li>
-					<li>
-						<p>
-							<b>Seletor universal</b>
-							Seleciona todos os elementos. É indicado por "*". Por exemplo: *.
-						</p>
-					</li>
-				</ul>
+			<ul>
+				<li>
+					<p>
+						<b>Seletor de tipo:</b>
+						Seleciona elementos com base no tipo da tag.
+						Por exemplo: 'h1', 'p', 'div'.
+					</p>
+				</li>
+				<li>
+					<p>
+						<b>Seletor de classe:</b>
+						Seleciona elementos com base no valor do atributo 'class' que é
+						indicado pelo prefixo ".". Por exemplo: '.destaque','.btn'
+						'.container'.
+					</p>
+				</li>
+				<li>
+					<p>
+						<b>Seletor de ID:</b>
+						Seleciona um único elemento com base no atributo 'id' que é
+						indicado pelo prefixo "#". Por exemplo: "#logo", "#header", "#menu"
+					</p>
+				</li>
+				<li>
+					<p>
+						<b>Seletor de descendentes:</b>
+						Seleciona elementos descendentes de outro elemento.
+						É indicado por um espaço entre os Seletores. Por exemplo:
+						'div p', '#container p', '#menu .item'.
+					</p>
+				</li>
+				<li>
+					<p>
+						<b>Seletor de filho direto:</b>
+						Seleciona elementos que são filhos direto de outro elemento.
+						É indica pelo sinal ">". Por exemplo: 'div > p', 'ul > li'.
+					</p>
+				</li>
+				<li>
+					<p>
+						<b>Seletor de adjacente:</b>
+						Seleciona o elemento adjacente imediatamente após o outro elemento.
+						É indicado pelo sinal "+". Por exemplo: 'h2 + p', 'label + input'.
+					</p>
+				</li>
+				<li>
+					<p>
+						<b>Seletor de irmão geral:</b>
+						Seleciona todos os elementos irmãos que seguem outro elemento.
+						É indicado pelo sinal "~". Por exemplo: 'h2 ~ p', ul ~ p'.
+					</p>
+				</li>
+				<li>
+					<p>
+						<b>Seletor de atributo:</b>
+						Seleciona elementos com base em um atributo específico e seu valor.
+						Por exemplo: '[type="text"]', '[href="https://"]'( seleciona links com URLs
+						que começam com "https://").
+					</p>
+				</li>
+				<li>
+					<p>
+						<b>Seletor de pseudo-classe:</b>
+						Seleciona elementos com base em um estado específico ou interação do usuário.
+						É indicado por ":". Por exemplo: ':hover', ':active', ':focus'.
+					</p>
+				</li>
+				<li>
+					<p>
+						<b>Seletor de pseudo-elemento:</b>
+						Seleciona partes específicas de um elemento. É indicado por "::".
+						Por exemplo: '::before', '::after'.
+					</p>
+				</li>
+				<li>
+					<p>
+						<b>Seletor universal</b>
+						Seleciona todos os elementos. É indicado por "*". Por exemplo: *.
+					</p>
+				</li>
+			</ul>
 			</p>
 		</article>
 		<article>
 			<h2>Box Model</h2>
 			<h3>O que é Box Model ?</h3>
-			<p> 
+			<p>
 				Em css, o termo "Box model" é utilizado quando falamos sobre design
-				e layout. 
+				e layout.
 			</p>
-			<p>É um conceito fundamental de Css que define como os elementos HTML 
+			<p>É um conceito fundamental de Css que define como os elementos HTML
 				são renderizados e ocupam espaço na página. Cada elemento é considerado
-				uma "caixa" que envolve o conteúdo e pode ter margens, bordas e preenchimento. 
+				uma "caixa" que envolve o conteúdo e pode ter margens, bordas e preenchimento.
 			</p>
 			<h4>O modelo de caixa consiste em quatro componentes principais:</h4>
 			<ol>
@@ -216,7 +240,7 @@
 						São áreas transparentes que ficam fora da borda. As margens
 						especificam o espaço entre um elemento e os elementos vizinhos
 					</p>
-				</li>	
+				</li>
 			</ol>
 			<em>Ilustração exemplo:</em>
 			<br>
@@ -225,17 +249,77 @@
 				Esses componentes do Box Model podem ser ajustados e controlados usando as
 				propriedades CSS apropriadas. Por exemplo:
 				<br>
-				<ul>
-					<li>
-						A propriedade <b>padding</b> define o preenchimento interno do elemento.
-					</li>
-					<li>A propriedade <b>Border</b> especifica as características da borda do elemento</li>
-					<li>A propriedade <b>Margin</b> define as regras do elemento, controlando o espaçamento externo </li>
-				</ul>
+			<ul>
+				<li>
+					A propriedade <b>padding</b> define o preenchimento interno do elemento.
+				</li>
+				<li>A propriedade <b>Border</b> especifica as características da borda do elemento</li>
+				<li>A propriedade <b>Margin</b> define as regras do elemento, controlando o espaçamento externo </li>
+			</ul>
 			</p>
 			<p>
 				Ao Manipular essas propriedades do Box Model, é possível controlar o layout e o espaçamento
-				dos elementos na paǵina, permitindo a criação de designs personalizados e responsivos. 
+				dos elementos na paǵina, permitindo a criação de designs personalizados e responsivos.
+			</p>
+			<h2>Width e Height</h2>
+			<p>
+				As propriedades <b>width</b> e <b>height</b> permitem controlar
+				a altura e largura, como os nomes sugerem, da área de conteúdo de
+				um elemento.
+			</p>
+			<em>exemplo:</em>
+			<pre>
+				<div class="box-code">
+					<code class="vampire-theme">
+						<span class="selector">div</span> {
+							<span class="attribute">height</span>:<span class="value">16px</span>
+							<span class="attribute">width</span>:<span class="value">16px</span>
+							<span class="attribute">display</span>: <span class="value">in-line</span>
+						}
+					</code>
+				</div>
+			</pre>
+			<p>
+				Algumas vezes pode ser necessário ter um maior controle das dimensões de um elemento,
+				especificando o quanto ela vai crescer ou encolher na página. Fazemos isso com
+				as propriedades <b>min-width</b>, <b>max-width</b> e <b>max-height</b>
+			</p>
+			<em>exemplo:</em>
+			<pre>
+				<div class="box-code">
+					<code class="vampire-theme">
+						<span class="selector">div</span> {
+							<span class="attribute">width</span>:<span class="value">16px</span>
+							<span class="attribute">min-width</span>: <span class="value">80px</span>
+						}
+					</code>
+				</div>
+			</pre>
+			<p>
+				A forma como o valor dessas propriedades afetam o elemento depende
+				do valor da propriedade <b>box-sizing</b>. Essa propriedade define
+				como a altura e largura de um elemento são calculadas.
+			</p>
+			<p>
+				O valor padrão do <b>box-sizing</b> é o <b>content-box</b>, que define
+				que a largura e altura de um elemento serão definidas pelos valores atribuídos
+				para as propriedades height e width:
+			</p>
+			<em>exemplo:</em>
+			<pre>
+				<div class="box-code">
+					<code class="vampire-theme">
+						<span class="selector">div</span> {
+							<span class="attribute">heigth</span>:<span class="value">16px;</span>
+							<span class="attribute">width</span>:<span class="value">20px;</span>
+							<span class="attribute">padding</span>:<span class="value">16px;</span>
+							<span class="attribute">box-sizing</span>: <span class="value">content-box;</span>
+						}
+					</code>
+				</div>
+			</pre>
+			<p>
+				No caso acima, as dimensões finais do elemento serão 48 pixels de altura (height de 16px + padding de 2*16=32) pois os valores de propriedades (heigth e padding) e (width e padding) serão somados quando o motor de renderização do navegador os apresentar. 
 			</p>
 		</article>
 	</section>
