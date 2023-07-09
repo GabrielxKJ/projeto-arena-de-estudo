@@ -261,7 +261,7 @@
 				Ao Manipular essas propriedades do Box Model, é possível controlar o layout e o espaçamento
 				dos elementos na paǵina, permitindo a criação de designs personalizados e responsivos.
 			</p>
-			<h2>Width e Height</h2>
+			<h3>Width e Height</h3>
 			<p>
 				As propriedades <b>width</b> e <b>height</b> permitem controlar
 				a altura e largura, como os nomes sugerem, da área de conteúdo de
@@ -319,8 +319,70 @@
 				</div>
 			</pre>
 			<p>
-				No caso acima, as dimensões finais do elemento serão 48 pixels de altura (height de 16px + padding de 2*16=32) pois os valores de propriedades (heigth e padding) e (width e padding) serão somados quando o motor de renderização do navegador os apresentar. 
+				No caso acima, as dimensões finais do elemento serão 48 pixels de altura (height de 16px + padding de 2 * 16px = 32px) e 52 pixels de largura (width de 20px + padding de 2 * 16px = 32px) pois os valores das propriedades (height e padding) e (width e padding) serão somados quando o motor de renderização do navegador os apresentar.
 			</p>
+			
+			<p> O segundo valor possível para essa propriedade é o <b>border-box</b>, que
+			define que a altura e largura de um elemento deve levar em consideração também a sua
+			borda e preenchimento.
+			</p>
+			<pre>
+				<div class="box-code">
+					<code class="vampire-theme">
+						<span class="selector">div</span> {
+							<span class="attribute">heigth</span>:<span class="value">16px;</span>
+							<span class="attribute">width</span>:<span class="value">20px;</span>
+							<span class="attribute">padding</span>:<span class="value">16px;</span>
+							<span class="attribute">box-sizing</span>: <span class="value">border-box</span>
+						}
+					</code>
+				</div>
+			</pre>
+			<p>
+				Neste caso, uma vez que definimos o padding do elemento como 16 pixels, a altura final
+				do elemento será de 32 pixels, considerando que este valor corresponde a área de preenchimento superior e inferior (16 + 16). Sendo a altura, height, de 16 pixels, ela será considerada dentro dos 32 pixels já calculados a partir da área de preencimento. Isso acontece pois no box-sizing o elemento tende a se encolher para se ajustar ao espaço correspondente às dimensões. Uma vez que a altura, height, do elemento supere os 32 pixels definidos pelo <b>padding</b>, por exemplo ao receber 33 pixels, a area do conteúdo do elemento passará a ter 1 pixel e a altura final do elemento passará a ser um pixel maior (33 - 32 = 1). O mesmo se aplica a largura, width.   
+			</p>
+			<h3>Shorthand</h3>
+			<p>
+				shorthand é uma forma concisa de escrever propriedades CSS em umá única linha,
+				agrupando-as e fornecendo valores em uma ordem específica. Isso torna o código mais legível e eficiente.
+			</p>
+			<em>Você pode usar a seguinte sintaxe:</em>
+			<ul>
+				<li>
+					<p><b>padding: valor</b> para aplicar o mesmo valor em todos os lados</p>
+				</li>
+				<li>
+					<p><b>padding: valor1 valor2</b> para aplicar valores diferentes nos lados "top"/"bottom" e
+						"right"/left".
+					</p>
+				</li>
+				<li>
+					<p><b>padding: valor1 valor2 valor3</b> para aplicar valores diferentes nos lados "top", "right"/left" e "bottom".
+					</p>
+				</li>
+				<li>
+					<p>
+						<b>padding: valor1 valor2 valor3 valor4</b> para aplicar valores diferentes em todos os lados, na ordem superior, direito, inferior e esquerdo.
+					</p>
+				</li>
+			</ul>
+		</article>
+		<article>
+			<h2>posicionamento de elementos</h2>
+			<p> 
+				O posicionamento de elementos no Css refere-se à maneira como você controla a colocação e a disposição dos elementos HTML na página. Existem várias técnicas e propriedades CSS disponíveis para o posicionamento, incluindo as seguintes:
+			</p>
+			<h3>Static(estático)</h3>
+
+			<p>
+				Este é o <b>comportamento de posicionamento padrão</b>
+				que seus elementos vão aderir ao serem adicionados na página.
+				Em termos práticos isso significa que se nenhuma regra é associada de forma explícita, este valor é assumido por definição. 
+			</p>
+
+			<p>O "static" simplesmente indica aos elementos que eles devem seguir o fluxo definido declarado no documento HTML. Ou seja, se tivermos três divs declaradas uma após a outra e elas estiverem o static como valor para posicionamento, elas simplemente serão colocadas uma embaixo da outra na renderização</p>
+			<h3></h3>
 		</article>
 	</section>
 </body>
