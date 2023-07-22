@@ -11,7 +11,7 @@
 
 <body>
 	<header>
-		<H1>Bora estudar CSS!!!</H1>
+		<h1 id="h1-header">Bora estudar CSS!!!</h1>
 	</header>
 	<section id="introduction-box">
 		<article>
@@ -382,9 +382,33 @@
 			</p>
 
 			<p>O "static" simplesmente indica aos elementos que eles devem seguir o fluxo definido declarado no documento HTML. Ou seja, se tivermos três divs declaradas uma após a outra e elas estiverem o static como valor para posicionamento, elas simplemente serão colocadas uma embaixo da outra na renderização</p>
-			<h3></h3>
+
+			<h3>Relative</h3>
+			<p>
+				Ao definir um elemento como position: relative, você pode usar propriedades adicionais, como <b>top, right, bottom e left</b>, para ajustar sua posição em relação à sua posição original no fluxo normal. Essas propriedades posicionam o elemento em relação a si mesmo, sem afetar a posição dos outros elementos.
+			</p>
+			<h3>Absolute</h3>
+			<p>Ao definir um elemento como position:absolute, ele é posicionado em relação ao seu ancestral posicionado mais próximo. O ancestral posicionado pode ser um elemento com uma posição diferente de ('relative', 'absolute' ou 'fixed' ). Você pode usar as propriedades usar as propriedades <b>top, right, bottom e left</b> para ajustar a posição do elemento em relação ao seu ancestral posicionado.</p>
+			<h3>Fixed</h3>
+			<p>Ao definir um elemento como 'position: fixed' ele é posicionado em relação à janela
+				de visualização do navegador, independente do deslocamento da página. Isso significa que o elemento permanecerá no mesmo local, mesmo que o usuário role a página. 
+			</p>
+			<h3>Posicionamento em grade(display:grid) e flexbox(display:flex):</h3>
+			<p>Essas são técnicas avançadas de posicionamento que permitem criar layouts complexos e responsivos. O posicionamento em Grade e Flexbox permitem controlar a disposição e o alinhamento dos elementos em linhas e coluna.</p>
+		</article>
+		<hr>
+	</section>
+	<section id="posicionamento-e-layout">
+		<article>
+			<h2>Display</h2>
+			<h3>O que é a propriedade display ?</h3>
+			<p>Para entender o que faz a propriedade <b>display</b>, é preciso lembrar que existem dois tipos de elementos HTML. O elemento em bloco ou <b>block</b> ocupa 100% da largura disponível e para ele é sempre iniciado uma nova linha.</p>
+			<p> Um exemplo são os títulos, <b>divs</b> e paragrafos nos quais, mesmo se os seus conteúdos forem de apenas uma palavra, toda a linha correspondente deverá ser reservada a cada elemento.</p>
+
+			<p>
+				Já os elementos em linha ou <em>inline</em> ocupam apenas o espaço necessário para exibir o conteúdo. Por exemplo: imagens, links entre outros. A propriedade display permite modificar a forma como esses elementos são <b>renderizados</b>. Dessa forma podemos organizá-los de diferentes maneiras na página html.
+			</p>
 		</article>
 	</section>
 </body>
-
 </html>
