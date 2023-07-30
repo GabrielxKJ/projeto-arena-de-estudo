@@ -14,6 +14,7 @@
 		<h1 id="h1-header">Bora estudar CSS!!!</h1>
 	</header>
 	<section id="introduction-box">
+
 		<article>
 			<h2>Introdução à CSS</h2>
 			<h3>Conceitos:</h3>
@@ -198,6 +199,8 @@
 			</ul>
 			</p>
 		</article>
+	</section>
+	<section id="box-model-box">
 		<article>
 			<h2>Box Model</h2>
 			<h3>O que é Box Model ?</h3>
@@ -205,7 +208,8 @@
 				Em css, o termo "Box model" é utilizado quando falamos sobre design
 				e layout.
 			</p>
-			<p>É um conceito fundamental de Css que define como os elementos HTML
+			<p>
+				É um conceito fundamental de Css que define como os elementos HTML
 				são renderizados e ocupam espaço na página. Cada elemento é considerado
 				uma "caixa" que envolve o conteúdo e pode ter margens, bordas e preenchimento.
 			</p>
@@ -269,16 +273,16 @@
 			</p>
 			<em>exemplo:</em>
 			<pre>
-				<div class="box-code">
-					<code class="vampire-theme">
-						<span class="selector">div</span> {
-							<span class="attribute">height</span>:<span class="value">16px</span>
-							<span class="attribute">width</span>:<span class="value">16px</span>
-							<span class="attribute">display</span>: <span class="value">in-line</span>
-						}
-					</code>
-				</div>
-			</pre>
+			<div class="box-code">
+				<code class="vampire-theme">
+					<span class="selector">div</span> {
+						<span class="attribute">height</span>:<span class="value">16px</span>
+						<span class="attribute">width</span>:<span class="value">16px</span>
+						<span class="attribute">display</span>: <span class="value">in-line</span>
+					}
+				</code>
+			</div>
+		</pre>
 			<p>
 				Algumas vezes pode ser necessário ter um maior controle das dimensões de um elemento,
 				especificando o quanto ela vai crescer ou encolher na página. Fazemos isso com
@@ -286,15 +290,15 @@
 			</p>
 			<em>exemplo:</em>
 			<pre>
-				<div class="box-code">
-					<code class="vampire-theme">
-						<span class="selector">div</span> {
-							<span class="attribute">width</span>:<span class="value">16px</span>
-							<span class="attribute">min-width</span>: <span class="value">80px</span>
-						}
-					</code>
-				</div>
-			</pre>
+			<div class="box-code">
+				<code class="vampire-theme">
+					<span class="selector">div</span> {
+						<span class="attribute">width</span>:<span class="value">16px</span>
+						<span class="attribute">min-width</span>: <span class="value">80px</span>
+					}
+				</code>
+			</div>
+		</pre>
 			<p>
 				A forma como o valor dessas propriedades afetam o elemento depende
 				do valor da propriedade <b>box-sizing</b>. Essa propriedade define
@@ -307,40 +311,49 @@
 			</p>
 			<em>exemplo:</em>
 			<pre>
-				<div class="box-code">
-					<code class="vampire-theme">
-						<span class="selector">div</span> {
-							<span class="attribute">heigth</span>:<span class="value">16px;</span>
-							<span class="attribute">width</span>:<span class="value">20px;</span>
-							<span class="attribute">padding</span>:<span class="value">16px;</span>
-							<span class="attribute">box-sizing</span>: <span class="value">content-box;</span>
-						}
-					</code>
-				</div>
-			</pre>
+			<div class="box-code">
+				<code class="vampire-theme">
+					<span class="selector">div</span> {
+						<span class="attribute">heigth</span>:<span class="value">16px;</span>
+						<span class="attribute">width</span>:<span class="value">20px;</span>
+						<span class="attribute">padding</span>:<span class="value">16px;</span>
+						<span class="attribute">box-sizing</span>: <span class="value">content-box;</span>
+					}
+				</code>
+			</div>
+		</pre>
 			<p>
-				No caso acima, as dimensões finais do elemento serão 48 pixels de altura (height de 16px + padding de 2 * 16px = 32px) e 52 pixels de largura (width de 20px + padding de 2 * 16px = 32px) pois os valores das propriedades (height e padding) e (width e padding) serão somados quando o motor de renderização do navegador os apresentar.
+				No caso acima, as dimensões finais do elemento serão 48 pixels de altura (height de 16px + padding de 2 * 16px
+				= 32px) e 52 pixels de largura (width de 20px + padding de 2 * 16px = 32px) pois os valores das propriedades
+				(height e padding) e (width e padding) serão somados quando o motor de renderização do navegador os
+				apresentar.
 			</p>
-			
+
 			<p> O segundo valor possível para essa propriedade é o <b>border-box</b>, que
-			define que a altura e largura de um elemento deve levar em consideração também a sua
-			borda e preenchimento.
+				define que a altura e largura de um elemento deve levar em consideração também a sua
+				borda e preenchimento.
 			</p>
 			<pre>
-				<div class="box-code">
-					<code class="vampire-theme">
-						<span class="selector">div</span> {
-							<span class="attribute">heigth</span>:<span class="value">16px;</span>
-							<span class="attribute">width</span>:<span class="value">20px;</span>
-							<span class="attribute">padding</span>:<span class="value">16px;</span>
-							<span class="attribute">box-sizing</span>: <span class="value">border-box</span>
-						}
-					</code>
-				</div>
-			</pre>
+			<div class="box-code">
+				<code class="vampire-theme">
+					<span class="selector">div</span> {
+						<span class="attribute">heigth</span>:<span class="value">16px;</span>
+						<span class="attribute">width</span>:<span class="value">20px;</span>
+						<span class="attribute">padding</span>:<span class="value">16px;</span>
+						<span class="attribute">box-sizing</span>: <span class="value">border-box</span>
+					}
+				</code>
+			</div>
+		</pre>
 			<p>
 				Neste caso, uma vez que definimos o padding do elemento como 16 pixels, a altura final
-				do elemento será de 32 pixels, considerando que este valor corresponde a área de preenchimento superior e inferior (16 + 16). Sendo a altura, height, de 16 pixels, ela será considerada dentro dos 32 pixels já calculados a partir da área de preencimento. Isso acontece pois no box-sizing o elemento tende a se encolher para se ajustar ao espaço correspondente às dimensões. Uma vez que a altura, height, do elemento supere os 32 pixels definidos pelo <b>padding</b>, por exemplo ao receber 33 pixels, a area do conteúdo do elemento passará a ter 1 pixel e a altura final do elemento passará a ser um pixel maior (33 - 32 = 1). O mesmo se aplica a largura, width.   
+				do elemento será de 32 pixels, considerando que este valor corresponde a área de preenchimento superior e
+				inferior (16 + 16). Sendo a altura, height, de 16 pixels, ela será considerada dentro dos 32 pixels já
+				calculados a partir da área de preencimento. Isso acontece pois no box-sizing o elemento tende a se encolher
+				para se ajustar ao espaço correspondente às dimensões. Uma vez que a altura, height, do elemento supere os 32
+				pixels definidos pelo <b>padding</b>, por exemplo ao receber 33 pixels, a area do conteúdo do elemento passará
+				a ter 1 pixel e a altura final do elemento passará a ser um pixel maior (33 - 32 = 1). O mesmo se aplica a
+				largura, width.
 			</p>
 			<h3>Shorthand</h3>
 			<p>
@@ -358,57 +371,120 @@
 					</p>
 				</li>
 				<li>
-					<p><b>padding: valor1 valor2 valor3</b> para aplicar valores diferentes nos lados "top", "right"/left" e "bottom".
+					<p><b>padding: valor1 valor2 valor3</b> para aplicar valores diferentes nos lados "top", "right"/left" e
+						"bottom".
 					</p>
 				</li>
 				<li>
 					<p>
-						<b>padding: valor1 valor2 valor3 valor4</b> para aplicar valores diferentes em todos os lados, na ordem superior, direito, inferior e esquerdo.
+						<b>padding: valor1 valor2 valor3 valor4</b> para aplicar valores diferentes em todos os lados, na ordem
+						superior, direito, inferior e esquerdo.
 					</p>
 				</li>
 			</ul>
 		</article>
+	</section>
+	<section id="position-box">
 		<article>
-			<h2>posicionamento de elementos</h2>
-			<p> 
-				O posicionamento de elementos no Css refere-se à maneira como você controla a colocação e a disposição dos elementos HTML na página. Existem várias técnicas e propriedades CSS disponíveis para o posicionamento, incluindo as seguintes:
+			<h2>Posicionamento de elementos</h2>
+			<p>
+				O posicionamento de elementos no Css refere-se à maneira como você controla a colocação e a disposição dos
+				elementos HTML na página. Existem várias técnicas e propriedades CSS disponíveis para o posicionamento,
+				incluindo as seguintes:
 			</p>
 			<h3>Static(estático)</h3>
 
 			<p>
 				Este é o <b>comportamento de posicionamento padrão</b>
 				que seus elementos vão aderir ao serem adicionados na página.
-				Em termos práticos isso significa que se nenhuma regra é associada de forma explícita, este valor é assumido por definição. 
+				Em termos práticos isso significa que se nenhuma regra é associada de forma explícita, este valor é assumido
+				por
+				definição.
 			</p>
 
-			<p>O "static" simplesmente indica aos elementos que eles devem seguir o fluxo definido declarado no documento HTML. Ou seja, se tivermos três divs declaradas uma após a outra e elas estiverem o static como valor para posicionamento, elas simplemente serão colocadas uma embaixo da outra na renderização</p>
+			<p>O "static" simplesmente indica aos elementos que eles devem seguir o fluxo definido declarado no documento
+				HTML. Ou seja, se tivermos três divs declaradas uma após a outra e elas estiverem o static como valor para
+				posicionamento, elas simplemente serão colocadas uma embaixo da outra na renderização</p>
 
 			<h3>Relative</h3>
 			<p>
-				Ao definir um elemento como position: relative, você pode usar propriedades adicionais, como <b>top, right, bottom e left</b>, para ajustar sua posição em relação à sua posição original no fluxo normal. Essas propriedades posicionam o elemento em relação a si mesmo, sem afetar a posição dos outros elementos.
+				Ao definir um elemento como position: relative, você pode usar propriedades adicionais, como <b>top, right,
+					bottom e left</b>, para ajustar sua posição em relação à sua posição original no fluxo normal. Essas
+				propriedades posicionam o elemento em relação a si mesmo, sem afetar a posição dos outros elementos.
 			</p>
 			<h3>Absolute</h3>
-			<p>Ao definir um elemento como position:absolute, ele é posicionado em relação ao seu ancestral posicionado mais próximo. O ancestral posicionado pode ser um elemento com uma posição diferente de ('relative', 'absolute' ou 'fixed' ). Você pode usar as propriedades usar as propriedades <b>top, right, bottom e left</b> para ajustar a posição do elemento em relação ao seu ancestral posicionado.</p>
+			<p>Ao definir um elemento como position:absolute, ele é posicionado em relação ao seu ancestral posicionado mais
+				próximo. O ancestral posicionado pode ser um elemento com uma posição diferente de ('relative', 'absolute' ou
+				'fixed' ). Você pode usar as propriedades usar as propriedades <b>top, right, bottom e left</b> para ajustar a
+				posição do elemento em relação ao seu ancestral posicionado.</p>
 			<h3>Fixed</h3>
 			<p>Ao definir um elemento como 'position: fixed' ele é posicionado em relação à janela
-				de visualização do navegador, independente do deslocamento da página. Isso significa que o elemento permanecerá no mesmo local, mesmo que o usuário role a página. 
+				de visualização do navegador, independente do deslocamento da página. Isso significa que o elemento
+				permanecerá
+				no mesmo local, mesmo que o usuário role a página.
 			</p>
 			<h3>Posicionamento em grade(display:grid) e flexbox(display:flex):</h3>
-			<p>Essas são técnicas avançadas de posicionamento que permitem criar layouts complexos e responsivos. O posicionamento em Grade e Flexbox permitem controlar a disposição e o alinhamento dos elementos em linhas e coluna.</p>
+			<p>Essas são técnicas avançadas de posicionamento que permitem criar layouts complexos e responsivos. O
+				posicionamento em Grade e Flexbox permitem controlar a disposição e o alinhamento dos elementos em linhas e
+				coluna.</p>
 		</article>
 		<hr>
 	</section>
-	<section id="posicionamento-e-layout">
+
+	<section id="display-box">
 		<article>
 			<h2>Display</h2>
 			<h3>O que é a propriedade display ?</h3>
-			<p>Para entender o que faz a propriedade <b>display</b>, é preciso lembrar que existem dois tipos de elementos HTML. O elemento em bloco ou <b>block</b> ocupa 100% da largura disponível e para ele é sempre iniciado uma nova linha.</p>
-			<p> Um exemplo são os títulos, <b>divs</b> e paragrafos nos quais, mesmo se os seus conteúdos forem de apenas uma palavra, toda a linha correspondente deverá ser reservada a cada elemento.</p>
-
 			<p>
-				Já os elementos em linha ou <em>inline</em> ocupam apenas o espaço necessário para exibir o conteúdo. Por exemplo: imagens, links entre outros. A propriedade display permite modificar a forma como esses elementos são <b>renderizados</b>. Dessa forma podemos organizá-los de diferentes maneiras na página html.
+				No CSS, a propriedade <b>Display</b> é usada para controlar o tipo de layout que
+				um elemento terá fluxo da página. Ela determina como o elemento se comportará em relação aos outros elementos
+				e
+				ao espaço disponível na página. Existem vários valores
+				para a propriedade <b>display</b>, mas os principais são:
+			</p>
+			<h3>BLOCK</h3>
+			<p>
+				Elementos com <b>display:block;</b> são formatados como blocos independentes,
+				ocupando toda a largura disponível do contêiner pai, Eles começam em <b>um nova linha</b> e por padrão, se
+				estendem verticalmente para ajustar seu conteúdo.
+			</p>
+			<h3>INLINE</h3>
+			<p>
+				Elementos com <b>display:in-line</b> são formatados em linha com o conteúdo
+				ao redor.Eles não começam em uma nova linha e ocupam <b>apenas a largura necessária
+					para conter seu conteúdo</b>. Elementos inline não aceitam propriedades de altura e largura.
+			</p>
+			<h3>INLINE-BLOCK</h3>
+			<p>
+				Elementos com <b>display: inline-block</b> combinam características dos elementos
+				<b>inline</b> e <b>block</b>. Eles são formatados em linha com o conteúdo ao redor,
+				mas <b>podem receber propriedades de altura e largura, permitindo controlar melhor o seu layout</b>. Essa
+				opção
+				é útil para alinhar elementos horizontalmente e ainda aplicar dimensões a eles.
+			</p>
+			<h3>FLEX</h3>
+			<p>
+				A propriedade <b>display:flex</b> ativa o modelo de layout flexível(Flexbox) para
+				o elemento e seus filhos diretos. O flexbox permite criar layouts reponsivos e flexíveis
+				onde os elementos dentro de um contêiner podem ser facilmente alinhados e distribuídos na horizontal e na
+				vertical.
+			</p>
+
+			<h3>GRID</h3>
+			<p>
+				A propriedade <b>display: grid</b> ativa o modelo de layout de grade (Grid layout)
+				para o elemento e seus filhos diretos o grid layout permite dividir espaço em linhas e
+				colunas, facilitando o posicionamento preciso dos elementos na página
+			</p>
+			<h3>NONE</h3>
+			<p>
+				Elementos com <b>display: none</b> são totalmente removidos do fluxo da página,
+				tornando-os invísiveis e não ocupando espaço na renderização. <b>Isso é util quando
+					se deseja esconder temporariamente um elemento
+				</b>
 			</p>
 		</article>
 	</section>
 </body>
+
 </html>

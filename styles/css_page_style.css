@@ -1,18 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Francois+One&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Passion+One:wght@400;700&display=swap');
 
-/* *{
+* {
     margin: 0px;
     padding: 0px;
-} */
+}
 
 header h1 {
   padding: 20px;
   margin-top: 0;
-}
-
-header, body {
-  margin: 0;
-  padding: 0;
 }
 
 body {
@@ -35,6 +30,41 @@ header {
     color: rgb(77, 79, 185);
 }
 
+#introduction-box {
+  /* margin-top: 10px; */
+  background-color: rgb(247, 157, 157);
+}
+#introduction-box h2 {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+#introduction-box h3 {
+  /* margin-top: 5px; */
+  padding-top:10px ;
+  padding-left: 30px;
+}
+
+#introduction-box p {
+  max-width: 1000px;
+  margin-top: 20px;
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+
+
+
+
+#box-model-box {
+  background-color: #a0c29e;
+}
+#position-box {
+  background-color: rgb(183, 144, 183);
+}
+
+#display-box {
+  background-color: rgb(232, 232, 105);
+}
 .vampire-theme {
 	color: #f8f8f2; /* Cor do texto */
   background-color: #282a36;
