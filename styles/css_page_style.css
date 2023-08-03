@@ -19,15 +19,29 @@ body {
 
 
 header {
-    /* position: fixed;  */
-    height: 70px;
-    margin:0;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%; 
-    background-color: rgb(10, 26, 59);
-    color: rgb(77, 79, 185);
+  display: flex;
+  justify-content: space-between;
+  /* position: fixed;  */
+  height: 70px;
+  margin:0;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%; 
+  background-color: rgb(10, 26, 59);
+  color: rgb(77, 79, 185);
+}
+
+nav {
+  
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
 }
 
 #introduction-box {
@@ -45,12 +59,28 @@ header {
   padding-left: 30px;
 }
 
+#introduction-box article ul {
+  list-style-type: circle;
+}
+
 #introduction-box p {
   max-width: 1000px;
   margin-top: 20px;
   margin-left: 40px;
   margin-bottom: 20px;
 }
+
+#introduction-box em {
+  padding-top:10px ;
+  padding-left: 30px;
+  /* margin-bottom: 100px; */
+}
+
+#introduction-box img {
+  margin: 50px;
+  /* width:fit-content; */
+}
+
 
 
 
