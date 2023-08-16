@@ -1,6 +1,6 @@
 // let arrayN = [1, 2, 3, 4, 5 , 6 , 7, 8, 9, 10];
 
-function multiplica() {
+export function multiplica() {
     let result;
     for(let i = 1; i <= 10; i++) {
         eachNum = i;
